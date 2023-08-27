@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import SearchIcon from '@mui/icons-material/Search';
@@ -17,7 +18,7 @@ const Header=()=>{
       </div>
     <div className="header__nav">
       <div className="nav__item">
-        <span className="nav__itemLineOne">hello guest</span>
+        <span className="nav__itemLineOne"> Hello Guest</span>
         <span className="nav__itemLineTwo">SIGN IN</span>
       </div>
         <div className="nav__item">
@@ -25,8 +26,8 @@ const Header=()=>{
         <span className="nav__itemLineTwo">Shop</span>
         </div>
           <div className="nav__item">
-          <ShoppingBasketIcon fontSize="large"/>
-        <span className="nav__itemLineTwo">0</span>
+          <ShoppingBasketIcon  className="itemBasket" fontSize="large"/>
+        <span className="nav__itemLineTwo nav__basketCount">0</span>
           </div>
       </div>      
     
