@@ -1,5 +1,8 @@
 import React from "react";
-import './Header.css'
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import SearchIcon from '@mui/icons-material/Search';
+
 const Header=()=>{
     return(
         <div className="header">
