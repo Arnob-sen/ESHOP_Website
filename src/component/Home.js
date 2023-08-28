@@ -52,7 +52,7 @@ const Home=()=>{
                     title= 'Headphones'
                     price={69}
                     image ={headphone}
-                    rating={4.5}
+                    rating={4}
                     />
                     </div>
                     <div className="home__row">
