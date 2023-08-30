@@ -41,3 +41,4 @@ const CheckoutProduct =({id,title,price,image,rating})=>{
     )
 }
 export default CheckoutProduct;
+//now its functional
