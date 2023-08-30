@@ -12,17 +12,23 @@ function App() {
   
  
   <Routes>
-    <Route path="/checkout"
-    element={
-      <Fragment><Header/><Checkout/></Fragment>}/>
 
-    
   <Route  path='/'
   element={
     <Fragment>
       <Header/>
       <Home />
     </Fragment>}/>
+    {/* // */}
+
+
+
+    <Route path="/checkout"
+    element={
+      <Fragment><Header/><Checkout/></Fragment>}/>
+
+    
+  
   
    
     
