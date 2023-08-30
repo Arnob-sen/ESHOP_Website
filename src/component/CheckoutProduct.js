@@ -3,8 +3,20 @@ import './Checkout.css';
 import bag from './bag.jpg'
 import Subtotal from "./Subtotal";
 import './CheckoutProduct.css';
+import { useStateValue   } from "./StateProvider";
 
 const CheckoutProduct =({id,title,price,image,rating})=>{
+     const [{basket},dispatch]=useStateValue();
+     const removeFromBasket=()=>
+     {
+        dispatch(
+            {
+                type:'REMOVE_FROM_BASKET',
+                id:id
+            }
+        )
+
+     }
     return(
         <div className='checkoutProduct'>
             <div className="checkoutProduct__left">
@@ -30,7 +42,7 @@ const CheckoutProduct =({id,title,price,image,rating})=>{
                         }
 
                 </div>
-                <button >remove from basket</button>
+                <button onClick={removeFromBasket} >remove from basket</button>
             </div>
             </div>
             <div className="checkoutProduct__right">
