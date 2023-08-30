@@ -34,7 +34,7 @@ const CheckoutProduct =({id,title,price,image,rating})=>{
             </div>
             </div>
             <div className="checkoutProduct__right">
-                <Subtotal/>
+                
             </div>
 
         </div>
