@@ -8,16 +8,26 @@ const CheckoutProduct =({id,title,price,image,rating})=>{
     return(
         <div className='checkoutProduct'>
             <div className="checkoutProduct__left">
-            <img src={bag} alt="" className="checkoutProduct__image" />
+            <img src={image} alt="" className="checkoutProduct__image" />
             <div className='checkoutProduct__info'>
                 <p className="checkoutProduct__title">
-                    Bag
+                    {title}
                 </p>
                 <p className="checkoutProduct__price">
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct__rating">
+                {Array(rating)
+                        .fill()
+                        .map((_,i)=>(
+                            <p>⭐</p>
+                        )
+                        )
+    
+    
+    
+                        }
 
                 </div>
                 <button >remove from basket</button>
